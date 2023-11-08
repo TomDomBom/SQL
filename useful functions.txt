@@ -1,0 +1,15 @@
+MYSQL:
+    RANK() / DENSE_RANK
+    Syntax: RANK() OVER ([PARTITION BY partition_expression, ... ]
+                ORDER BY sort_expression [ASC | DESC], ...)
+    RANK() - give each row a rank according to a specific ordering
+    DENSE_RANK() - same thing, but will not permit gaps in ranking ex: two at 3 will not skip to 5
+    WITH cte AS
+    Syntax: WITH cte_name (column1, column2, ...) AS (
+        SELECT ...
+        FROM ...
+        WHERE ...
+    )
+    CTEs are commonly used to simplify complex SQL queries, 
+    improve query readability, 
+    and break down large queries into smaller, more manageable parts. 
